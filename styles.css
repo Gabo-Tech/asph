@@ -1,0 +1,165 @@
+body {
+  margin: 0;
+  font-family: 'Helvetica', sans-serif;
+}
+
+header,
+footer {
+  text-align: center;
+  padding: 1em;
+  background-color: #282828;
+  color: #fff;
+}
+
+header h1,
+footer p {
+  margin: 0.5em 0;
+}
+
+.sib-form {
+  text-align: center;
+  background-color: #282828;
+  padding: 1em;
+}
+
+.sib-form-container {
+  max-width: 540px;
+  margin: auto;
+  border-radius: 3px;
+  background-color: rgba(40, 40, 40, 1);
+}
+
+.sib-form-message-panel {
+  font-size: 16px;
+  text-align: left;
+  font-family: 'Helvetica', sans-serif;
+  border-radius: 3px;
+  max-width: 540px;
+  margin: auto;
+}
+
+.sib-form-message-panel__inner-text {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.sib-form-message-panel__text--center {
+  text-align: center;
+}
+
+.sib-form-block {
+  padding: 8px 0;
+  text-align: left;
+  color: #d7d7d7;
+}
+
+.sib-form-block img {
+  width: 100%;
+  height: auto;
+}
+
+.sib-form-block__button {
+  font-size: 25px;
+  font-weight: 700;
+  color: #282828;
+  background-color: #ffffff;
+  border-radius: 15px;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.input,
+.entry__field input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.input--hidden {
+  display: none;
+}
+
+.entry__label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.entry__error {
+  display: none;
+  font-size: 16px;
+  color: #661d1d;
+  background-color: #ffeded;
+  border-radius: 3px;
+  padding: 5px;
+  margin-top: 5px;
+}
+
+.entry__specification {
+  font-size: 12px;
+  color: #bebebe;
+}
+
+.checkbox_tick_positive {
+  margin-left: 5px;
+}
+
+@media only screen and (max-width: 768px) {
+  .sib-form-block {
+    padding: 5px 0;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .sib-form-container {
+    padding: 10px;
+  }
+}
+
+.loader {
+  border: 8px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 8px solid #3498db;
+  width: 60px;
+  height: 60px;
+  animation: spin 2s linear infinite;
+  display: none;
+  margin: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.show-loader {
+  display: block;
+}
+
+.social-icons {
+  margin-top: 1em;
+}
+
+.social-icons a {
+  margin: 0 10px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.social-icons a i {
+  font-size: 24px;
+}
