@@ -3,16 +3,14 @@ body {
   font-family: 'Helvetica', sans-serif;
 }
 
-header,
-footer {
+header, footer {
   text-align: center;
   padding: 1em;
   background-color: #282828;
   color: #fff;
 }
 
-header h1,
-footer p {
+header h1, footer p {
   margin: 0.5em 0;
 }
 
@@ -70,8 +68,7 @@ footer p {
   margin-top: 20px;
 }
 
-.input,
-.entry__field input {
+.input, .entry__field input {
   width: 100%;
   padding: 10px;
   border: 1px solid #ccc;
@@ -140,7 +137,6 @@ footer p {
   0% {
     transform: rotate(0deg);
   }
-
   100% {
     transform: rotate(360deg);
   }
