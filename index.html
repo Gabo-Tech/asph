@@ -11,6 +11,9 @@
   <!-- Favicon -->
   <link rel="icon" href="/favicon.ico" type="image/x-icon">
   
+  <!-- Font Awesome for Social Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
   <!-- Styles and Fonts -->
   <style>
     body {
@@ -80,6 +83,7 @@
       border: none;
       padding: 10px 20px;
       cursor: pointer;
+      margin-top: 20px;
     }
 
     .input, .entry__field input {
@@ -166,9 +170,8 @@
       text-decoration: none;
     }
 
-    .social-icons img {
-      width: 24px;
-      height: 24px;
+    .social-icons a i {
+      font-size: 24px;
     }
   </style>
   <link rel="stylesheet" href="https://sibforms.com/forms/end-form/build/sib-styles.css" media="none" onload="if(media!='all')media='all'">
@@ -279,7 +282,7 @@
             <label class="entry__specification">You may unsubscribe at any time using the link in our newsletter.</label>
           </div>
         </div>
-        <div class="sib-form-block" style="text-align: center">
+        <div class="sib-form-block" style="text-align: center;">
           <button class="sib-form-block__button sib-form-block__button-with-loader" form="sib-form" type="submit">
             <svg class="icon clickable__icon progress-indicator__icon sib-hide-loader-icon" viewBox="0 0 512 512" aria-hidden="true">
               <path d="M460.116 373.846l-20.823-12.022c-5.541-3.199-7.54-10.159-4.663-15.874 30.137-59.886 28.343-131.652-5.386-189.946-33.641-58.394-94.896-95.833-161.827-99.676C261.028 55.961 256 50.751 256 44.352V20.309c0-6.904 5.808-12.337 12.703-11.982 83.556 4.306 160.163 50.864 202.11 123.677 42.063 72.696 44.079 162.316 6.031 236.832-3.14 6.148-10.75 8.461-16.728 5.01z" />
@@ -299,16 +302,16 @@
     <p>Follow us on:</p>
     <div class="social-icons">
       <a href="https://facebook.com/profile.php?id=61560920477357" aria-label="Facebook">
-        <img src="https://example.com/icons/facebook-icon.png" alt="Facebook">
+        <i class="fab fa-facebook"></i>
       </a>
       <a href="https://x.com/asphaleia_news" aria-label="X (Twitter)">
-        <img src="https://example.com/icons/twitter-icon.png" alt="Twitter">
+        <i class="fab fa-twitter"></i>
       </a>
       <a href="https://linkedin.com/asphaleia-newsletter" aria-label="LinkedIn">
-        <img src="https://example.com/icons/linkedin-icon.png" alt="LinkedIn">
+        <i class="fab fa-linkedin"></i>
       </a>
       <a href="https://instagram.com/asphaleia_newsletter" aria-label="Instagram">
-        <img src="https://example.com/icons/instagram-icon.png" alt="Instagram">
+        <i class="fab fa-instagram"></i>
       </a>
     </div>
   </footer>
@@ -331,7 +334,7 @@
     window.translation = {
       common: {
         selectedList: '{quantity} list selected',
-        selectedLists: '{quantity} lists selected'
+      selectedLists: '{quantity} lists selected'
       }
     };
 
